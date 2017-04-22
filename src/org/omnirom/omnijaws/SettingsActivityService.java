@@ -20,7 +20,6 @@ package org.omnirom.omnijaws;
 import android.Manifest;
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -88,9 +87,6 @@ public class SettingsActivityService extends PreferenceActivity implements OnPre
         final PreferenceScreen prefScreen = getPreferenceScreen();
         mEnable = (SwitchPreference) findPreference(Config.PREF_KEY_ENABLE);
 
-        if (!mShowIconPack) {
-            prefScreen.removePreference(mEnable);
-        }
         mCustomLocation = (SwitchPreference) findPreference(Config.PREF_KEY_CUSTOM_LOCATION);
 
         mProvider = (ListPreference) findPreference(Config.PREF_KEY_PROVIDER);
