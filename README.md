@@ -9,10 +9,7 @@ http://openweathermap.org/current
 
 IMPORTANT: please request your own API key from OpenWeatherMap at
 https://openweathermap.org/appid#get
-and enter it here
-https://github.com/omnirom/android_packages_services_OmniJaws/blob/android-7.1/res/values/config.xml
-Check also here how this is used
-https://github.com/omnirom/android_packages_services_OmniJaws/blob/android-7.1/src/org/omnirom/omnijaws/OpenWeatherMapProvider.java
+and enter it via [AicpExtras->Weather->Service settings->API key]
 
 Yahoo weather API
 https://developer.yahoo.com/weather/
@@ -22,7 +19,7 @@ https://github.com/CyanogenMod/android_packages_apps_LockClock
 
 It provided a lot of insights and knowledge how to do this
 Some parts of the code like the provider access have been taken
-from it with minor modificatioons. Please check the file copyright
+from it with minor modifications. Please check the file copyright
 headers for the origins of the files.
 
 If you already include LockClock with your ROM you should
@@ -36,7 +33,7 @@ Client access
 -----
 Here is a client code example using the content provider
 to access weather data
-https://github.com/omnirom/android_packages_services_OmniJaws/blob/android-7.1/src/org/omnirom/omnijaws/client/OmniJawsClient.java
+https://github.com/omnirom/android_packages_services_OmniJaws/blob/android-8.1/src/org/omnirom/omnijaws/client/OmniJawsClient.java
 
 Broadcasts and content observers
 -----
@@ -89,5 +86,5 @@ An example can be found here https://github.com/maxwen/WeatherIconSample
 
 
 Icons:
-Outline weather icon  set is used with permission from  http://emske.com/25-outline-weather-icons/
+Outline weather icon set is used with permission from  http://emske.com/25-outline-weather-icons/
 
