@@ -30,6 +30,8 @@ import org.omnirom.omnijaws.WeatherInfo.DayForecast;
 import android.content.Context;
 import android.location.Location;
 import android.net.Uri;
+import android.preference.PreferenceManager;
+import android.text.TextUtils;
 import android.util.Log;
 
 public class OpenWeatherMapProvider extends AbstractWeatherProvider {
@@ -39,6 +41,7 @@ public class OpenWeatherMapProvider extends AbstractWeatherProvider {
     private static final String SELECTION_LOCATION = "lat=%f&lon=%f";
     private static final String SELECTION_ID = "id=%s";
     private static final String API_KEY = "bf2e711833265643fa9749dfbc9c2d54";
+    private static final String API_KEY_PREFERENCE = "custom_owm_api_key";
 
     private static final String URL_LOCATION =
             "http://api.openweathermap.org/data/2.5/find?q=%s&mode=json&lang=%s&appid=%s";
@@ -328,7 +331,13 @@ public class OpenWeatherMapProvider extends AbstractWeatherProvider {
     }
 
     private String getAPIKey() {
-        return mContext.getResources().getString(R.string.owm_api_key, API_KEY);
+        String customKey = PreferenceManager.getDefaultSharedPreferences(mContext)
+                .getString(API_KEY_PREFERENCE, "");
+        if (TextUtils.isEmpty(customKey)) {
+            return mContext.getResources().getString(R.string.owm_api_key, API_KEY);
+        } else {
+            return customKey;
+        }
     }
 
     public boolean shouldRetry() {
