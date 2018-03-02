@@ -42,7 +42,7 @@ public class Config {
         SharedPreferences prefs = PreferenceManager
                 .getDefaultSharedPreferences(context);
 
-        if (prefs.getString(PREF_KEY_PROVIDER, "0").equals("0")) {
+        if (prefs.getString(PREF_KEY_PROVIDER, "1").equals("0")) {
             return new OpenWeatherMapProvider(context);
         }
         return new YahooWeatherProvider(context);
@@ -83,14 +83,14 @@ public class Config {
 
         prefs.edit().putString(PREF_KEY_LOCATION_ID, id).commit();
     }
-    
+
     public static String getLocationName(Context context) {
         SharedPreferences prefs = PreferenceManager
                 .getDefaultSharedPreferences(context);
 
         return prefs.getString(PREF_KEY_LOCATION_NAME, null);
     }
-    
+
     public static void setLocationName(Context context, String name) {
         SharedPreferences prefs = PreferenceManager
                 .getDefaultSharedPreferences(context);
@@ -109,7 +109,7 @@ public class Config {
         }
         return null;
     }
-    
+
     public static void setWeatherData(Context context, WeatherInfo data) {
         SharedPreferences prefs = PreferenceManager
                 .getDefaultSharedPreferences(context);
@@ -125,7 +125,7 @@ public class Config {
         prefs.edit().remove(PREF_KEY_WEATHER_DATA).commit();
         prefs.edit().remove(PREF_KEY_LAST_UPDATE).commit();
     }
-    
+
     public static long getLastUpdateTime(Context context) {
         SharedPreferences prefs = PreferenceManager
                 .getDefaultSharedPreferences(context);
@@ -145,7 +145,7 @@ public class Config {
         SharedPreferences prefs = PreferenceManager
                 .getDefaultSharedPreferences(context);
 
-        return prefs.getBoolean(PREF_KEY_ENABLE, false);
+        return prefs.getBoolean(PREF_KEY_ENABLE, true);
     }
 
     public static boolean setEnabled(Context context, boolean value) {
