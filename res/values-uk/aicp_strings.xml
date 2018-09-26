@@ -15,4 +15,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources></resources>
+<resources>
+  <string name="custom_owm_api_key_title">Ключ API</string>
+  <string name="custom_owm_api_key_summary">Введіть свій ключ API з OpenWeatherMap, щоб переконатися, що він залишається нижче межі запиту</string>
+</resources>
