@@ -16,6 +16,6 @@
      limitations under the License.
 -->
 <resources>
-  <string name="custom_owm_api_key_title">Ключ API</string>
-  <string name="custom_owm_api_key_summary">Введите свой ключ API от OpenWeatherMap для нахождения вне действующего лимита на запросы провайдера погоды</string>
+    <string name="custom_owm_api_key_title">Ключ API</string>
+    <string name="custom_owm_api_key_summary">Введите свой ключ API от OpenWeatherMap для нахождения вне действующего лимита на запросы провайдера погоды</string>
 </resources>

@@ -16,6 +16,6 @@
      limitations under the License.
 -->
 <resources>
-  <string name="custom_owm_api_key_title">API anahtarı</string>
-  <string name="custom_owm_api_key_summary">İstek sınırının altında kalmasını sağlamak için OpenWeatherMap\'ten kendi API anahtarınızı girin</string>
+    <string name="custom_owm_api_key_title">API anahtarı</string>
+    <string name="custom_owm_api_key_summary">İstek sınırının altında kalmasını sağlamak için OpenWeatherMap\'ten kendi API anahtarınızı girin</string>
 </resources>

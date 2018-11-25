@@ -16,6 +16,6 @@
      limitations under the License.
 -->
 <resources>
-  <string name="custom_owm_api_key_title">Chave API</string>
-  <string name="custom_owm_api_key_summary">Digite sua chave de API de OpenWeatherMap para assegurar-se de ficar abaixo do limite de solicitação</string>
+    <string name="custom_owm_api_key_title">Chave API</string>
+    <string name="custom_owm_api_key_summary">Digite sua chave de API de OpenWeatherMap para assegurar-se de ficar abaixo do limite de solicitação</string>
 </resources>
